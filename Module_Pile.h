@@ -31,82 +31,89 @@
 
 void pile_initialiser(int* pile[], int* nb_elements);
 /*
-Cette fonction sert a initialiser une pile et sont nb_elements à NULL.
+PILE_INITIALISER
+	Cette fonction sert a initialiser une pile et sont nb_elements à NULL.
 
-Parametre : int* pile[]         --> Pointeur sur tableau (qui est notre pile)
-int* nb_elements    --> Pointeur sur le nombre d'éléments de la pile
+	Parametre : 	int* pile[]		--> Pointeur sur tableau (qui est notre pile)
+			int* nb_elements	--> Pointeur sur le nombre d'éléments de la pile
 
-Return : Void
+	Return : Void
 */
 /************************************************************************************************/
 
 
 void pile_detruire(int pile[], int* nb_elements);
 /*
-Cette fonction sert a detruire une pile et de remettre son adresse à NULL et le nombre d'éléments à 0.
+PILE_DETRUIRE
+	Cette fonction sert a detruire une pile et de remettre son adresse à NULL et le nombre d'éléments à 0.
 
-Parametre : int pile[]         --> Tableau (qui est notre pile)
-int* nb_elements    --> Pointeur sur le nombre d'éléments de la pile
+	Parametre : 	int pile[]		--> Tableau (qui est notre pile)
+			int* nb_elements	--> Pointeur sur le nombre d'éléments de la pile
 
-Return : Void
+	Return : Void
 */
 /************************************************************************************************/
 
 void pile_initialiser_version_utile(int* pile[], int* nb_elements, int grandeur_pile);
 /*
-Cette fonction sert a initialiser une pile à un grandeur prédéterminée.
+PILE_INITIALISER_VERSION_UTILE
+	Cette fonction sert a initialiser une pile à un grandeur prédéterminée.
 
-Parametre : int* pile[]         --> Pointeur sur tableau (qui est notre pile)
-int* nb_elements    --> Pointeur sur le nombre d'éléments de la pile
-int grandeur_pile    --> grandeur désirée de la pile (i.e. valeur qu'aura le NB d'élément)
+	Parametre : 	int* pile[]         --> Pointeur sur tableau (qui est notre pile)
+			int* nb_elements    --> Pointeur sur le nombre d'éléments de la pile
+			int grandeur_pile   --> grandeur désirée de la pile (i.e. valeur qu'aura le NB d'élément)
 
-Return : Void
+	Return : Void
 */
 /************************************************************************************************/
 
 void pile_copier(int* pile_destination[], int *nb_elements_destination, int pile_source[], int nb_elements_source);
 /*
-Cette fonction sert a copier une pile dans un autre.
+PILE_COPIER
+	Cette fonction sert a copier une pile dans un autre.
 
-Parametre : int* pile_destination[]      --> Pointeur vers notre pile de destination
-int *nb_elements_destination     --> pointeur vers le nombre d'éléments de la pile de destination
-int pile_source                --> tableau (pile) à copier dans la nouvelle pile
-int nb_element_source           --> Nombre d'éléments de la pile de source
+	Parametre : int* pile_destination[]      --> Pointeur vers notre pile de destination
+	int *nb_elements_destination     --> pointeur vers le nombre d'éléments de la pile de destination
+	int pile_source                --> tableau (pile) à copier dans la nouvelle pile
+	int nb_element_source           --> Nombre d'éléments de la pile de source
 
-Return : Void
+	Return : Void
 */
 /************************************************************************************************/
 
 void pile_ajouter(int* pile[], int* nb_elements, int entier);
 /*
-Cette fonction sert a ajouter un element à une pile.
+PILE_AJOUTER
+	Cette fonction sert a ajouter un element à une pile.
 
-Parametre : int* pile[]         --> Pointeur sur tableau (qui est notre pile)
-int* nb_elements    --> Pointeur sur le nombre d'éléments de la pile
-int entier          --> L'entier à ajouter sur le dessus de la pile
+	Parametre : int* pile[]         --> Pointeur sur tableau (qui est notre pile)
+	int* nb_elements    --> Pointeur sur le nombre d'éléments de la pile
+	int entier          --> L'entier à ajouter sur le dessus de la pile
 
-Return : Void
+	Return : Void
 */
 /************************************************************************************************/
 
 int pile_enlever(int* pile[], int *nb_elements);
 /*
-Cette fonction sert a enlever le dernier élément d'une pile.
+PILE_ENLEVER
+	Cette fonction sert a enlever le dernier élément d'une pile.
 
-Parametre : int* pile[]         --> Pointeur sur tableau (qui est notre pile)
-int* nb_elements    --> Pointeur sur le nombre d'éléments de la pile
+	Parametre : int* pile[]         --> Pointeur sur tableau (qui est notre pile)
+	int* nb_elements    --> Pointeur sur le nombre d'éléments de la pile
 
-Return : l'entier qui à été enlever
+	Return : l'entier qui à été enlever
 */
 
 /************************************************************************************************/
 
 void pile_afficher(int pile[], int nb_elements);
 /*
-Cette fonction sert a afficher tous les éléments d'une pile.
+PILE_AFFICHER
+	Cette fonction sert a afficher tous les éléments d'une pile.
 
-Parametre : int* pile[]         --> Pointeur sur tableau (qui est notre pile)
-            int nb_elements     --> Nombre d'éléments de la pile
+	Parametre : 	int* pile[]         --> Pointeur sur tableau (qui est notre pile)
+            		int nb_elements     --> Nombre d'éléments de la pile
             
 Return : Void
 */
